@@ -8,15 +8,6 @@ namespace GenericsArray
 {
     public class ArraysGeneric
     {
-        // Generics
-        public T[] CreateArrayGeneric<T>(T item1, T item2)
-        {
-            return new T[]
-            {
-                item1,
-                item2
-            };
-        }
 
         // Method overloading
         public int[] CreateArray(int item1, int item2) 
@@ -47,5 +38,16 @@ namespace GenericsArray
                 item2
             };
         }
+
+        // Generics
+        public T[] CreateArrayGeneric<T>(T item1, T item2)
+        {
+            return new T[]
+            {
+                item1,
+                item2
+            };
+        }
+
     }
 }
